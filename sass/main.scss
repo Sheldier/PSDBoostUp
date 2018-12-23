@@ -48,7 +48,7 @@ nav{
 
 .boostup{
 	background:#709DCA;
-	padding-bottom: 335px;
+	padding-bottom: 45px;
 	& .title{
 		margin-top: 100px;
 		margin-bottom: 25px;
@@ -90,3 +90,24 @@ nav{
 		padding: 11px 40px;
 	}
 }
+.section-slider{
+	background-color: #709DCA;
+	height: 200px;
+	& .carousel{
+			& ol{
+		position: relative;
+		z-index: 2;
+		top: 20px;
+			& li{
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: transparent;
+				border: 2px solid gray;
+			}	
+				}
+	}
+}
+ ol .active{
+	border: 2px solid #86BDF3 !important;
+	}
