@@ -7,6 +7,7 @@
 h1,h2{
 	font-family: "Gotham";
 	font-weight: 600;
+	text-transform: uppercase;
 }
 p{
 	font-family: "OpenSans";
@@ -14,6 +15,7 @@ p{
 a{
 	font-family: "Lato";
 	font-weight: 400;
+	text-transform: uppercase;
 	text-decoration: none;
 	&:hover{
 		text-decoration: none;
@@ -33,7 +35,6 @@ nav{
 		justify-content: space-around;
 		margin: 0;
 		& a{
-			text-transform: uppercase;
 			font-size: 13px;
 			color: gray;
 			padding: 6px 10px;
@@ -43,4 +44,49 @@ nav{
 			}
 		 }
 		}
+}
+
+.boostup{
+	background:#709DCA;
+	padding-bottom: 335px;
+	& .title{
+		margin-top: 100px;
+		margin-bottom: 25px;
+		text-align: center;
+		color:white;
+		& h1{
+			margin-bottom: 0;
+			font-size: 36px;
+		}
+		& p{
+			margin-top: -5px;
+			font-weight: 200;
+		}
+	}
+	& .form{
+		background-color: white;
+		padding: 8px 0 10px 0;
+		border-radius: 3px;
+		color: gray;
+		& i{
+			padding: 5px 10px 3px 10px;
+		}
+		& input{
+			border: none;
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	& input[type="submit"]{
+		text-transform: uppercase;
+		background-color: #FFBB42;
+		color: white;
+		font-family: "OpenSans";
+		font-size: 14px;
+		font-weight: 400;
+		border:none;
+		border-radius: 3px;
+		padding: 11px 40px;
+	}
 }
