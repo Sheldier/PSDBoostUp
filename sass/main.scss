@@ -9,8 +9,14 @@ h1,h2{
 	font-weight: 600;
 	text-transform: uppercase;
 }
+h3,h4{
+	font-family: "Lato";
+	font-weight: 600;
+	text-transform: uppercase;
+}
 p{
 	font-family: "OpenSans";
+	font-weight: 400;
 }
 a{
 	font-family: "Lato";
@@ -35,6 +41,8 @@ nav{
 		justify-content: space-around;
 		margin: 0;
 		& a{
+			text-align: center;
+			display: block;
 			font-size: 13px;
 			color: gray;
 			padding: 6px 10px;
@@ -111,3 +119,73 @@ nav{
  ol .active{
 	border: 2px solid #86BDF3 !important;
 	}
+.services{
+	margin-top: 230px;
+	margin-bottom: 40px;
+	& .title-box{
+		text-align: center;
+		margin-bottom: 60px;
+		& p{
+			margin-top: -10px;
+		}
+	}
+	& .service-box{
+		display: grid;
+		grid-template-colums: 1fr 1fr;
+		grid-template-areas:
+					"icon text";
+		margin-bottom: 65px;
+		& .icon{
+			grid-area: "icon";
+			margin-top: -15px;
+			margin-right: 21px;
+			font-size: 50px;
+			color:#709DCA;
+			&:hover{
+				color: #F7803A;
+			}
+		}
+		& h4{
+			font-size: 18px;
+		}
+		& p{
+			font-size: 13px;
+		}
+	}
+	& .service-box__sub{
+		grid-area:"text";
+	}
+}
+.aboutus{
+	margin-bottom: 200px;
+	& .aboutus-text{
+			background-color: #FFC155;
+			height: 100%;
+		& .aboutus-text__content{
+			width: 500px;
+			height: 450px;
+			padding: 120px 0 0 70px;
+			color: #FFFFFF;
+			& h2{
+				font-size: 30px;
+			}
+			& p{
+				font-size: 13px;
+				font-weight: 400;
+				margin-bottom: 30px;
+			}
+			& a{
+				color: white;
+				font-size: 14px;
+				border: 1px solid #E9AF49;
+				border-radius: 3px;
+				padding: 10px 30px 12px 30px;
+			}
+		}
+	}
+	& img{
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+}
