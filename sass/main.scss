@@ -198,16 +198,6 @@ nav{
 	padding-top: 130px;
 	padding-bottom: 185px;
 	text-align: center;
-	& .title-box{
-		margin-bottom: 70px;
-		& h2{
-			color: #394B50;
-		}
-		& p{
-			font-weight: 200;
-			margin-top: -12px;
-		}
-	}
 	& .plan{
 		background-color: #FFF;
 
@@ -255,6 +245,17 @@ nav{
 		}
 	}
 }
+.title-box{
+	text-align: center;
+	margin-bottom: 70px;
+	& h2{
+		color: #394B50;
+		}
+	& p{
+		font-weight: 200;
+		margin-top: -12px;
+		}
+	}
 #text{
 	color: white;
 	background-color: #709DCA;
@@ -263,5 +264,49 @@ nav{
 	padding-bottom: 75px;
 	& h2{
 		color: white;
+	}
+}
+.how-works{
+	margin-top: 150px;
+	& .step-info{
+		margin-bottom: 80px;
+		text-align: center;
+		& i{
+			margin: 15px 0 75px 0;
+			font-size: 72px;
+			color: #709DCA;
+		}
+		& h5{
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: 17px;
+		}
+		& p{
+			font-size: 13px;
+			color: gray;
+		}
+	}
+	& a{
+		font-size: 14px;
+		padding: 12px 20px;
+		background-color: #FFBB42;
+		border-radius: 3px;
+		color: white;
+		margin-bottom: 140px;
+	}
+}
+.about-clients{
+	background-color: #FFC155;
+	& .clients-title{
+		margin-top: 130px;
+		margin-bottom: 45px;
+		text-align: center;
+		color:white;
+		& h2{
+			font-size: 30px;
+		}
+		& p{
+			margin-top: -15px;
+		}
 	}
 }
